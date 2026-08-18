@@ -1,5 +1,5 @@
 # Ex. No: 5 Inter-VLAN Routing Using Router-on-a-Stick
-# Date:
+# Date:01.08.2026
 ________________________________________
 # Objective
 To configure Inter-VLAN routing using a single router interface with subinterfaces (Router-on-a-Stick) so that hosts in different VLANs can communicate with each other.
@@ -17,7 +17,8 @@ ________________________________________
 •	PC2 and PC3 belong to VLAN 20 (192.168.20.0/24)<br>
 •	Switch connected to Router via a trunk port (FastEthernet0/1 on switch → GigabitEthernet0/0 on router)<br>
 •	Router subinterfaces handle VLAN routing<br>
-(Insert screenshot of your Packet Tracer setup here)<br>
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/1b0bd59f-000a-41b8-9d0f-efc196669fa5" />
+
 ________________________________________
 # IP Addressing Table
 Device	VLAN	IP Address	Subnet Mask	Port/Interface<br>
@@ -87,10 +88,21 @@ Router(config-if)# no shutdown<br>
 ________________________________________
 # Output (Screenshots)
 •	VLAN configuration on the switch<br>
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/19a84f76-cbee-4be7-a62e-f896f4df3a3e" />
+
 •	Router subinterface configuration<br>
+<img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/52b291eb-07f7-4fed-8a0a-eae45767fec5" />
+
 •	PC IP settings<br>
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4f3091f0-732a-476e-9429-1dd239301542" />
+
+
 •	Successful ping between PCs in different VLANs after routing<br>
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/a468f5c2-989f-4d4d-a400-f1c9c5819a85" />
+
 •	Successful ping between PCs in the same VLAN<br>
+<img width="1915" height="1079" alt="image" src="https://github.com/user-attachments/assets/e94aef82-8bd9-462e-b350-d68e1db10e6c" />
+
 ________________________________________
 # Result
 Inter-VLAN routing was successfully configured using the Router-on-a-Stick method. PCs in different VLANs could communicate through the router.
